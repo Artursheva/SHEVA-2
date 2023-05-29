@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tinos', serif;
+}
+.header {
+    background-image: url(/images/maun.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 86px;
+
+    font-size: 38px;
+}
+.nav-item:hover {
+color: red;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 34px;
+}
+.title {
+    color:#fff;
+    font-size: 80px;
+    width: 1000px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+}
+.subtitle {
+    color:#fff;
+    font-size:56px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 44px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 514px;
+    margin-top: 50px;
+}
+.input {
+    width: 447px;
+    height: 67px;
+    font-size: 24px;
+
+    outline: none;
+    padding-left: 15px;
+
+    border: 4px #8d8d8d solid;
+    border-radius: 20px;
+}
+.forma {
+    text-align:center;
+    margin-top: 20px;
+}
+.btn {
+    background-color:#5b89CE;
+    padding: 15px 18px;
+    color:#fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+
+    border: 2px #476443 solid;
+    border-radius:25px;
+}
+.btn:hover {
+color: #2c4e82;
+}
+
+.button {
+    text-align: center;
+    margin-top: 25px;
+}
