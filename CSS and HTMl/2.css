@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --dark: #333;
+    --primary: #bdc8d8;
+    --light: white;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    height: 100vh;
+    display: grid;
+    overflow: hidden;
+}
+
+.bg {
+    background: url(https://wallpaperbat.com/img/94046-summer-forest-wallpaper-top-free-summer-forest-background.jpg) center / cover;
+    position: relative;
+    height: 125%;
+    width: 105%;
+    top: -15%;
+    left: -2.5%;
+    transform: rotate(-3deg);
+}
+
+.bg::after {
+    content: '';
+    position: absolute;
+    top: 112%;
+    left: 50%;
+    height: 3px;
+    width: 50%;
+    background: var(--dark);
+}
+
+.content {
+    --gap: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--gap);
+    margin: 0 5vw;
+    padding-top: 5vw;
+}
+
+.item {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    width: 2px;
+    height: 13vw;
+    margin-left: calc(var(--gap) / 2);
+    background-color: var(--dark);
+}
+
+.item i {
+    font-size: 4vw;
+}
+
+.item__title {
+    margin: 2vw 0 1.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item__desc {
+    font-size: 0.9vw;
+    line-height: 1.5em;
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap') ;
+
+:root {
+    --dark: #333;
+    --primary: #bdc8d8;
+    --light: white;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+ overflow: hidden;
+ position: relative;
+ padding-top: 7vw;
+display: grid;
+align-content: start;
+justify-items: center;
+ 
+}
+body::after,
+body::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    z-index: -1;
+}
+ body::before {
+    background:url(https://www.hdwallpapers.in/download/landscape_view_of_white_mountains_under_dark_starry_sky_hd_dark-1920x1080.jpg)
+    center bottom / cover ;
+    backdrop-filter: saturata(130%);
+ }
+ body::after{
+    background: linear-gradient(to bottom, rgba(20,57,76), transperent 50%);
+ }
+
+.title,
+.desc {
+    font-weight: 300;
+    text-align: center;
+    color: var(--light);
+    text-transform: uppercase;
+}
+.title {
+    font-size: 7vw;
+    letter-spacing: 3vw;
+    position: relative;
+}
+.title::after,
+.title::before {
+    content:'';
+    position: absolute;
+    top: 50%;
+   transform: translateY(-50%);
+    height: 3px;
+    background-color: var(--light);
+    width: 20vw;
+}
+.title::before {
+    right: 100%;
+    margin-right: 3vw;
+}
+.title::after {
+    left: 100%;
+}
+.decs {
+font-size: 2vw;
+letter-spacing: 2vw;
+margin-top: 1vw;
+}
