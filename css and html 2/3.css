@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* colors */
+    --dark: #333;
+    --light: #fff;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    height: 100vh;
+    display: grid;
+    gap: 5vw;
+    grid-template-columns: 2fr 3fr;
+    padding: 5vw 3vw 3vw 5vw;
+}
+
+.left {
+    display: grid;
+    gap: 3vw;
+}
+
+.right {
+    justify-self: end;
+    display: grid;
+    justify-items: end;
+    align-content: space-between;
+    text-align: right;
+}
+
+.title {
+    font-size: 4vw;
+}
+
+.desc,
+.desc-small{
+    max-width: 300px;
+    font-size: 1vw;
+}
+.desc-small {
+    font-size: 0.9vw;
+}
+
+.labels {
+    display: flex;
+    gap: 3vw;
+}
+
+.label {
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.image {
+    --size: 70vw;
+    width: var(--size);
+    height:var(--size);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image::before,
+.image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image::before {
+    --offset: 110%;
+    left: var(--offset);
+    width: var(--offset);
+    border: 0.3vw solid var(--dark);
+    border-radius: var(--size);
+}
+.image::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(https://149874912.v2.pressablecdn.com/wp-content/uploads/2022/04/back-and-triceps-workout.jpg) 
+    -37vw -9vw / cover;
+    filter: saturate(150%);
+    border-radius: var(--size);
+}

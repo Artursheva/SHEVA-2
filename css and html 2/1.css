@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+    /* colors */
+    --dark: #333;
+    --light: #fff;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    background: url(https://media.gq.com/photos/618ecc5416d317dbdd5f619d/16:9/w_2560%2Cc_limit/jimmy-chin-gq-men-of-the-year-2021-01-lede.jpg) center / cover;
+    height: 100vh;
+    backdrop-filter: saturate(150%) brightness(80%);
+    box-shadow: inset 0 0 10vw var(--dark);
+}
+.content {
+    position: absolute;
+    top: 30vh;
+    right: 10vw;
+    width: 50vw;
+    height: 25vh;
+    border: 0.3vw solid var(--dark);
+    color: var(--dark);
+    text-align: right;
+    padding: 3vw;
+    text-transform: uppercase;
+}
+.title {
+    font-size: 4vw;
+font-weight: 300;
+letter-spacing: 4vw;
+}
+.label {
+    font-size: 2vw;
+    font-weight: 300;
+    letter-spacing: 1vw;
+    color: var(--light);
+}
