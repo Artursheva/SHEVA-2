@@ -1,0 +1,99 @@
+@import "/css/reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 1440px;
+    padding: 0 32px;
+}
+
+/* Header */
+
+.header {
+    height: 800px;
+    padding: 31px;
+    background-color: #000;
+    background-image: url(/image/AdobeStock_251238249\ 1.jpg);
+
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0 0 54px 54px;
+
+    color: #fff;
+}
+
+.hesder a {
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 54px;
+}
+
+.nac-list__item {
+    text-transform: capitalize;
+}
+
+.nav-list__link {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.nav-list__link--activite {
+    opacity: 1;
+}
+
+.user {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.user__greeting {
+    opacity: 0.5;
+}
+
+
+.user__name {
+    font-weight: 600;
+}
+
+.user__avatar {
+    position: relative;
+    height: 48px;
+    width: 48px;
+
+}
+
+.user__avatar::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    background-color: #FF0000;
+}
+
+.user__avatar-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
